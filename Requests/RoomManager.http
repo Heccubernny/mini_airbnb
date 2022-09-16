@@ -1,0 +1,41 @@
+@userhost = http://127.0.0.1:8000/api/users/
+
+
+@usershost = http://127.0.0.1:8000/api/users/users/
+
+
+@roommanagerhost = http://127.0.0.1:8000/api/users/roommanagers/
+
+GET {{userhost}} HTTP/1.1
+
+###
+
+GET {{usershost}} HTTP/1.1
+
+###
+
+GET {{usershost}}?id=2 HTTP/1.1
+
+###
+
+GET {{roommanagerhost}} HTTP/1.1
+
+###
+POST {{roommanagerhost}}add_room/ HTTP/1.1
+
+###
+POST http://127.0.0.1:8000/admin/login/?next=/admin/ HTTP/1.1
+
+{
+    "username": "admin",
+    "password": "admin"
+}
+###
+
+POST http://127.0.0.1:8000/admin/login/?next=/admin/ HTTP/1.1
+
+{
+    "username": "YOUR_USERNAME_HERE",
+    "password": "YOUR_PASSWORD_HERE"
+}
+###
