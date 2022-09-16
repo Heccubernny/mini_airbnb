@@ -2,5 +2,5 @@
 db.sqlite3
 **/migrations
 BASIC.py
-mediafiles
-**/__pychache__
+mediafiles/**
+**/__pychache__/**
